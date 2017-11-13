@@ -2,9 +2,9 @@ const express=require('express');
 const config=require('./config')[process.env.NODE_ENV || 'development'];
 const routes=require('./routes/api');
 const bodyParser=require('body-parser');
+const db = require('./db.js');
 
 var app=express();
-
 
 //bodyParser middleware to parser json data passed
 app.use(bodyParser.json());
@@ -17,9 +17,6 @@ app.use(function(req,res){
     //TODO: handle various types of errors
     res.status(404).send('404 error');
 });
-
-
-
 
 //listen for incoming requests
 app.listen(config['server'].port,function(){
