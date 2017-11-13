@@ -13,9 +13,10 @@ app.use(bodyParser.json());
 app.use('/api',routes);
 
 //middleware for handling errors ,404,500,etc
-app.use(function(req,res){
+app.use(function(err,req,res,next){
     //TODO: handle various types of errors
-    res.status(404).send('404 error');
+    console.log(err);
+    res.status(500).send({error:err.message});
 });
 
 //listen for incoming requests

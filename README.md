@@ -8,8 +8,8 @@ Node.js api for todo application.
 
 ### Features to implement
 
-    - GET "/todo" (send all existing todo notes)
-    - DELETE "todo/id" (delete todo note with ID==id)
-    - PUT "todo/id" (update todo note with ID==id)
+    - ~~GET "/todo" (send all existing todo notes)~~
+    - ~~DELETE "todo/id" (delete todo note with ID==id)~~
+    - ~~PUT "todo/id" (update todo note with ID==id)~~
     - user accounts for personal list storing (maybe passport.js)
     - multiple lists instead of one single list
