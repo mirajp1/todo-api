@@ -11,6 +11,6 @@ var NoteSchema=mongoose.Schema({
     }
 });
 
-var Note = mongoose.model('note',NoteSchema);
+// var Note = mongoose.model('note',NoteSchema);
 
-module.exports=Note;
+module.exports=NoteSchema;

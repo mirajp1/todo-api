@@ -12,4 +12,4 @@ Node.js api for todo application.
 - <del>DELETE "todo/id" (delete todo note with ID==id)</del>
 - <del>PUT "todo/id" (update todo note with ID==id)</del>
 - user accounts for personal list storing (maybe passport.js)
-- multiple lists instead of one single list
+-  <del>multiple lists instead of one single list</del>

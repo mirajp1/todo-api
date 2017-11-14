@@ -1,6 +1,6 @@
 const express=require('express');
 const config=require('./config')[process.env.NODE_ENV || 'development'];
-const routes=require('./routes/api');
+const routes=require('./routes');
 const bodyParser=require('body-parser');
 const db = require('./db.js');
 
